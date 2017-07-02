@@ -3,13 +3,16 @@
 <html>
 <head>
     <title>Authenticated</title>
-    <% Person usr = (Person)request.getAttribute("user"); %>
-
 </head>
 <body>
 <div>
-    <h2>Welcome, <%= usr.getUsername() %> </h2>
+    <h2>Welcome, ${user.username} </h2>
 </div>
 
 </body>
 </html>
+
+<!--
+    <% Person usr = (Person)request.getAttribute("user"); %>
+        <%= usr.getUsername() %>
+    -->
